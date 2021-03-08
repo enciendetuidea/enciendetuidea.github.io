@@ -21,6 +21,11 @@ header{
     z-index: 1000;
 }
 
+.u-wrapper{
+  margin: 0 auto!important;
+  max-width: 1200px;
+}
+
 .container{
     width: 100%;
     max-width: 120rem;
@@ -95,6 +100,18 @@ header{
   margin-right: 5px;
 }
 
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
 /*Apply styles after scroll*/
 .scrolling-active{
     background-color: #fff;
@@ -129,19 +146,73 @@ header{
 .hero{
     width: 100%;
     height: 100vh;
-    background: url("image.jpeg") center no-repeat;
+    background: url("") center no-repeat;
     background-size: cover;
     position: relative;
 }
-
+/* 
 .hero::after{
-    content: '';
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,.5);
+  content: '';
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.5);
+} */
+
+.main-section{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: [inicio] 1fr [linea2] 1fr [linea3] 1fr [linea4] 1fr [linea5] 1fr [linea6] 1fr [linea7] 1fr [linea8] 1fr [linea9] 1fr [linea10] 1fr [linea11] 1fr [linea12] 1fr [final];
+    grid-template-rows: [inicio] 1fr [fila2] 1fr [fila3] 1fr [fila4] 1fr [final];
+    grid-gap: 5px;
+}
+
+.main-section--item__logo{
+  background-color: lightblue;
+  grid-column: inicio / linea6;
+  grid-row: inicio / fila3;
+  z-index: 0;
+}
+
+.main-section--item__logo img{
+  width: 100%;
+  padding-top: 10rem;
+}
+
+
+.main-section--item__background{
+  background-image: url(./assets/foto.png);
+  background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+  background-color: steelblue;
+  grid-column: inicio / linea9;
+  grid-row: inicio / final;
+}
+
+.main-section--item__white{
+  background-color: lightgreen;
+  grid-column: linea9 / final;
+  grid-row: inicio / final;
+}
+
+.main-section--item__date{
+  background-color: maroon;
+  grid-column: linea8 / final;
+  grid-row: fila2 / fila3;
+}
+
+.main-section--item__description{
+  background-color: moccasin;
+  grid-column: linea8 / final;
+  grid-row: fila3 / fila4;
+}
+
+.main-section--item__cta{
+  background-color: navy;
 }
 
 .demo-content{
@@ -150,17 +221,9 @@ header{
     background-color: #fff;
 }
 /* Hero end*/
-.burger {
-    display: none;
-  }
 
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: rgb(226, 226, 226);
-    margin: 5px;
-    transition: all 0.3s ease;
-  }
+
+
 
 
   @media screen and (max-width: 1024px) {
