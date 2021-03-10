@@ -461,8 +461,6 @@ min-height: 70vh;
 .speakers__item--container{
   width: 220px;
   text-align: center;
-  margin-left: -60px;
-  margin-right: 40px;
 }
 
 .speakers__item--container img{
@@ -478,7 +476,7 @@ min-height: 70vh;
 }
 
 .speaker__item--line{
-  border-top: 1px solid red;
+  border-top: 3px solid red;
 }
 
 .speaker__item--description{
@@ -497,28 +495,44 @@ min-height: 70vh;
   margin: 5px;
 }
 
-.speakers__item--container-right{
-  width: 220px;
-  text-align: center;
+.right{
   margin-right: -60px;
   margin-left: 40px;
-  z-index: 1;
 }
 
-.speakers__item--container-right img{
-  max-width: 100%;
-    height: auto;
+.lef{
+  margin-left: -60px;
+  margin-right: 40px;
 }
-
-.speakers__item--container-right h2{
-  margin-top: 18px;
-  margin-bottom: 7px;
-  font-size: 22px;
-  font-family:var(--font-family-secunday);
-}
-
 
 /* fin speakers */
+
+/* inicio tweet */
+.tweet{
+  min-height: 40vh;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #E6E6E6;
+}
+
+.tweet__container h1{
+  font-size: 25px;
+}
+
+.tweet__container p{
+  font-size: 22px;
+  color: #589BF5;
+  font-family: var(--font-family-secunday);
+}
+
+.tweet__container a{
+  text-decoration: none;
+}
+
+/* fin tweet */
+
 
 
   @media screen and (max-width: 1024px) {
@@ -539,7 +553,7 @@ min-height: 70vh;
         right: 0px;
         height: 92vh;
         top: 8vh;
-        background-color: #5D4954;
+        background-color: #a7a7a7;
         display: flex;
         flex-direction: column;
         align-items: center;
