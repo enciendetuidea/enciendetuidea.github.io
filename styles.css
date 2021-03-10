@@ -264,6 +264,13 @@ header{
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 1.6rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.item--cta:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  width: 125px;
 }
 
 .main-section--item__cta{
@@ -437,6 +444,13 @@ min-height: 70vh;
   font-size: 40px;
 }
 
+.subtitle{
+  margin-top: 85px;
+  margin-bottom: 45px;
+  font-size: 40px;
+  text-align: center;
+}
+
 .speakers__container--item{
   display: flex;
   display: flex;
@@ -476,7 +490,7 @@ min-height: 70vh;
 }
 
 .speaker__item--line{
-  border-top: 3px solid red;
+  border-top: 3px solid #DC6448;
 }
 
 .speaker__item--description{
@@ -532,7 +546,93 @@ min-height: 70vh;
 }
 
 /* fin tweet */
+.tickets{
+  min-height: 100vh;
+}
 
+/* inicio tickets */
+
+.tickets__container{
+  display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.tickets__container--item{
+  width: 300px;
+  background-color: #E8E8E8;
+  height: 325px;
+  border-radius: 12px;
+  margin: 0px 10px 35px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.tickets__container--item:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.tickets__container--item h2{
+  height: 58px;
+  font-size: 22px;
+  font-family: var(--font-family-secunday);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ticktes__info{
+  background-color: white;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info__subtitle{
+  font-size: 12px;
+  font-family: var(--font-family-secunday);
+}
+
+.info__number{
+  font-size: 20px;
+  font-family: var(--font-family-secunday);
+}
+
+.line{
+  border-right: 1px solid #000;
+  height: 50px;
+}
+
+.ticket__features{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.features__item{
+  margin: 8px 8px 4px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  height: 26px;
+  max-width: fit-content;
+  background-color: white;
+}
+
+.features__item p{
+  font-size: 14px;
+  padding: 0px 10px 0px;
+  font-family: var(--font-family-secunday);
+}
+
+.ticket__button--container{
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px 10px;
+}
+
+/* fin tickets */
 
 
   @media screen and (max-width: 1024px) {
