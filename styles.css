@@ -322,7 +322,7 @@ header{
 .video--item{
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: #d3d3d3;
+  /* background-color: #d3d3d3; */
   grid-column: linea2 / final;
   grid-row: inicio-fila / final-fila;
   position: relative;
@@ -546,16 +546,52 @@ min-height: 70vh;
 }
 
 /* fin tweet */
-.tickets{
-  min-height: 100vh;
+
+/* inicio temario */
+.temario{
+
 }
 
+.temario__container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.temario__list{
+  display: flex;
+  align-self:center;
+    justify-content: center;
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+
+.temario__list ul{
+  padding: 0px 45px 0px;
+}
+
+.temario__img{
+  max-width: 300px;
+}
+
+.temario__img img{
+  max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* fin temario */
+
 /* inicio tickets */
+.tickets{
+  height: auto;
+}
 
 .tickets__container{
   display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-bottom: 145px;
 }
 
 .tickets__container--item{
@@ -617,13 +653,14 @@ min-height: 70vh;
   border-radius: 15px;
   height: 26px;
   max-width: fit-content;
-  background-color: white;
+  background-color: #ff3f1752;
 }
 
 .features__item p{
   font-size: 14px;
   padding: 0px 10px 0px;
   font-family: var(--font-family-secunday);
+  color: #ce2a09;
 }
 
 .ticket__button--container{
@@ -634,6 +671,12 @@ min-height: 70vh;
 
 /* fin tickets */
 
+/* foooter */
+footer{
+  height: 10vh;
+  background-color: black;
+}
+/* fin footer */
 
   @media screen and (max-width: 1024px) {
     .nav-links {
