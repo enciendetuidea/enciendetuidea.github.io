@@ -53,7 +53,7 @@ header{
 
 .nav a{
     text-decoration: none;
-    color: #fff;
+    color: #EC5B3D;
     font-size: 1.6rem;
     font-family: var(--font-family-secunday);
 }
@@ -79,7 +79,7 @@ header{
     content: '';
     width: 100%;
     height: 2px;
-    background-color: #fff;
+    background-color: #2D2DFF;
     position: absolute;
     left: 0;
     bottom: -3px;
@@ -94,8 +94,9 @@ header{
 
 #nav-cta{
     display: flex;
-    background-color: #fff;
-    color: #313131;
+    border: 2px solid #DC6448;
+    background-color: #ffffff;
+    color:  #DC6448;
     padding: 1rem 2rem;
     border-radius: 2rem;
     transition: background-color .5s ease;
@@ -116,14 +117,14 @@ header{
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: rgb(226, 226, 226);
+  background-color: #000000;
   margin: 5px;
   transition: all 0.3s ease;
 }
 
 /*Apply styles after scroll*/
 .scrolling-active{
-    background-color: #fff;
+    background-color:#EC5B3D;
     box-shadow: 0 3px 1rem rgba(0,0,0,.1);
 }
 
@@ -132,12 +133,12 @@ header{
 }
 
 .scrolling-active .nav a{
-    color: #313131;
+    color: #ffffff;
 }
 
 .scrolling-active #nav-cta{
-    background-color: #313131;
-    color: #fff;
+    background-color: #ffffff;
+    color: #EC5B3D;
 }
 
 .scrolling-active #nav-cta:hover{
@@ -714,10 +715,6 @@ footer{
         cursor: pointer;
     }
 
-    .item--description__container p{
-      font-size: 8px;
-    }
-
     .description__text--container{
       width: 70%;
     }
@@ -732,9 +729,39 @@ footer{
   }
 
   @media screen and (max-width: 460px){
+    .main-section--item__background{
+      grid-column: inicio / final;
+      grid-row: inicio / fila3;
+    }
+
+    .main-section--item__white{
+      grid-column: inicio / final;
+      grid-row: fila3 / final;
+    }
+
+    .main-section--item__date{
+      grid-column: linea3 / linea11;
+      margin-bottom: -50px;
+    }
+
+    .main-section--item__description{
+      grid-column: linea2 / linea12;
+      display: flex;
+      align-self: center;
+    }
+
+    .main-section--item__description p{
+      font-size: 14px;
+    }
+
+    .main-section--item__cta{
+      grid-area: fila4 / linea4 / final / linea10;
+    }
+
     .description__container h2{
       font-size: 30px;
     }
+
     .countdown__name{
       font-size: 14px;
     }
