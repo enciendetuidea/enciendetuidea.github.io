@@ -343,7 +343,9 @@ height: 100%;
 
 .description{
 width: 100%;
-height: auto;
+display: flex;
+align-items: center;
+min-height: 70vh;
 }
 
 .description__container{
@@ -382,7 +384,42 @@ height: auto;
 }
 /* description final */
 
+/* inicio countdown */
+.countdown{
+  min-height: 40vh;
+  background-color: #F0F0F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.countdown__container{
+  display: flex;
+  justify-content: center;
+}
+
+.countdown__item{
+  min-width: 15vw;
+  text-align: center;
+  border-radius: 23px;
+    background: #f0f0f0;
+    box-shadow: 20px 20px 60px #cccccc, -20px -20px 60px #ffffff;
+    margin: 5px;
+}
+
+.countdown__number{
+  font-size: 30px;
+  padding-bottom: 10px;
+  padding: 20px;
+  font-family: var(--font-family-secunday);
+}
+
+.countdown__name{
+  font-size: 16px;
+  font-family: var(--font-family-secunday);
+  padding: 0px 10px 10px;
+}
+/* final countdown */
 
 
   @media screen and (max-width: 1024px) {
@@ -441,6 +478,9 @@ height: auto;
   @media screen and (max-width: 460px){
     .description__container h2{
       font-size: 30px;
+    }
+    .countdown__name{
+      font-size: 14px;
     }
   }
   
