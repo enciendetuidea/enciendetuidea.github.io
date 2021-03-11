@@ -30,7 +30,7 @@ window.addEventListener('scroll', function () {
 })
 
 
-var countDate = new Date('Apr 1, 2021 00:00:00').getTime();
+var countDate = new Date('Apr 17, 2021 00:00:00').getTime();
 
 function newYear(){
     var now = new Date().getTime();

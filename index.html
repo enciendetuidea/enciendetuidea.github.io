@@ -16,20 +16,20 @@
     <header>
         <div class="container">
             <nav class="nav">
-                <a href="index.html" class="logo">Logo</a>
+                <a href="#container" class="logo">Logo</a>
                 <ul class="nav-list">
                     <li>
-                        <a href="#" class="nav-link">Acerca de</a>
+                        <a href="#about" class="nav-link">Acerca de</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">Speakers</a>
+                        <a href="#speakers" class="nav-link">Speakers</a>
                     </li>
                     <li>
-                        <a href="#" class="nav-link">Contacto</a>
+                        <a href="#temario" class="nav-link">Temario</a>
                     </li>
-                    <!-- <li>
-                        <a href="#" class="nav-link">Contact</a>
-                    </li> -->
+                    <li>
+                        <a href="#tickets" class="nav-link">Tickets</a>
+                    </li>
                 </ul>
                 <a href="#" id="nav-cta"><img class="img__ticket" src="./assets/ticket.svg" alt=""></img>Comprar</a>
                 <div class="burger">
@@ -40,8 +40,8 @@
             </nav>
         </div>
     </header>
-    <section class="hero">
-        <div class="u-wrapper">
+    <section class="hero" id="container">
+        <div class="">
             <div class="main-section">
                 <div class="main-section--item__logo">
                     <img src="./assets/logo.svg" alt="">
@@ -54,7 +54,7 @@
                 </div>
                 <div class="main-section--item__date">
                     <div class="item--date__container">
-                        <p>20, 27 de Marzo</p>
+                        <p>17 - 24 de abril</p>
                     </div>
                 </div>
                 <div class="main-section--item__description">
@@ -84,7 +84,7 @@
             </div>
         </div>
     </section>
-    <section class="description u-wrapper">
+    <section class="description u-wrapper" id="about">
         <div class="description__container">
             <div class="description__text--container">
                 <h2>COMIENZA AHORA</h2>
@@ -117,9 +117,9 @@
             </div>
         </div>
     </section>
-    <section class="speakers u-wrapper">
+    <section class="speakers u-wrapper" id="speakers">
         <div class="speakers__container">
-            <h2>Speakers</h2>
+            <h2 class="uppercase">Speakers</h2>
             <div class="speakers__container--item">
                 <div class="speakers__item">
                     <div class="speakers__decoration">
@@ -134,8 +134,9 @@
                             CEO y fundador de Wakkamole Inc.</br>
                             Miembro del Forbes Business Council</p>
                         <div class="speaker__sc--container">
-                            <img src="./assets/instagram-brands.svg" alt="">
-                            <img src="./assets/twitter-brands.svg" alt="">
+                            <a href="https://www.instagram.com/dmahbub/" target="_blank">
+                                <img src="./assets/instagram-brands.svg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -144,12 +145,14 @@
                         <img src="./assets/DEN.png" alt="">
                         <h2>Den Távara</h2>
                         <div class="speaker__item--line"></div>
-                        <p class="speaker__item--description">Cuenta con 17 años de experiencia en la industria gastronómica, textil y sector educativo.</br>
-                            Fundadora y directora creativa de la firma Den Távara.</br>
-                            Miembro de la Nación Creativa de Lima Design Week y de Fashion Revolution Perú. </p>
+                        <p class="speaker__item--description">Cuenta con 20 años de experiencia</br>
+                            Ha trabajado para más de 41 países y su modelo es utilizado por más de 2,500 marcas comerciales.</br>
+                            CEO y fundador de Wakkamole Inc.</br>
+                            Miembro del Forbes Business Council</p>
                         <div class="speaker__sc--container">
-                            <img src="./assets/instagram-brands.svg" alt="">
-                            <img src="./assets/twitter-brands.svg" alt="">
+                            <a href="https://www.instagram.com/dentavara/?hl=es-la" target="_blank">
+                                <img src="./assets/instagram-brands.svg" alt="">
+                            </a>
                         </div>
                     </div>
                     <div class="speakers__decoration">
@@ -157,7 +160,7 @@
                     </div>
                 </div>
             </div>
-            <h2>Invitados</h2>
+            <h2 class="uppercase">Invitados</h2>
             <div class="speakers__container--item">
                 <div class="speakers__item">
                     <div class="speakers__item--container">
@@ -168,8 +171,9 @@
                             Ha participado en Vancouber Fashion Week y en el Lima Fashion Week.</br>
                             Se ha presentado en Los Ángeles, China y París.</p>
                         <div class="speaker__sc--container">
-                            <img src="./assets/instagram-brands.svg" alt="">
-                            <img src="./assets/twitter-brands.svg" alt="">
+                            <a href="https://www.instagram.com/noebernacelli/?hl=es-la" target="_blank">
+                                <img src="./assets/instagram-brands.svg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -181,8 +185,9 @@
                         <p class="speaker__item--description">Artista plástico peruano con numerosos premios.</br>
                             Ha realizado once exposiciones individuales en la galería Cecilia González, Lima. </p>
                         <div class="speaker__sc--container">
-                            <img src="./assets/instagram-brands.svg" alt="">
-                            <img src="./assets/twitter-brands.svg" alt="">
+                            <a href="https://www.instagram.com/fitoespinosaoficial/" target="_blank">
+                                <img src="./assets/instagram-brands.svg" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -198,8 +203,8 @@
             </a>
         </div>
     </section>
-    <section class="temario u-wrapper">
-        <h2 class="subtitle">Temario</h2>
+    <section class="temario u-wrapper" id="temario">
+        <h2 class="subtitle uppercase">Temario</h2>
         <div class="temario__container">
             <div class="temario__list">
                 <ul>
@@ -220,8 +225,8 @@
             </div>
         </div>
     </section>
-    <section class="tickets u-wrapper">
-        <h2 class="subtitle">Tickets</h2>
+    <section class="tickets u-wrapper" id="tickets">
+        <h2 class="subtitle uppercase">Tickets</h2>
         <div class="tickets__container">
             
             <div class="tickets__container--item">
@@ -289,7 +294,10 @@
         </div>
     </section>
     <footer>
-
+        <div class="contacto">
+            <h2>Contacto</h2>
+            <a href="mailto:nowhere@mozilla.org">correo@correo.com</a>
+        </div>
     </footer>
     <script src="./main.js"></script>
 </body>
