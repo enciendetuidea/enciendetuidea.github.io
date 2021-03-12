@@ -57,3 +57,14 @@ setInterval(function(){
 },1000)
 
 
+twttr.widgets.createShareButton(
+    "https:\/\/dev.twitter.com\/web\/tweet-button",
+    document.getElementById("tweet-container"),
+    {
+      size: "large",
+      text: "Taller personalizado, con un grupo pequeño en el cual obtendrás bases sólidas para tu marca o proyecto y su plan estratégico",
+      hashtags: "example,demo",
+      via: "twitterdev",
+      related: "twitterapi,twitter"
+    }
+  );
