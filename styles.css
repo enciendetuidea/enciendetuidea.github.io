@@ -613,7 +613,8 @@ min-height: 70vh;
 
 .tickets__container--item{
   width: 300px;
-  background-color: #E8E8E8;
+  border: 2px solid rgb(220, 100, 72);
+  background-color: #ffffff;
   height: 325px;
   border-radius: 12px;
   margin: 0px 10px 35px;
@@ -635,7 +636,7 @@ min-height: 70vh;
 }
 
 .ticktes__info{
-  background-color: white;
+  background-color: #E8E8E8;
   height: 70px;
   display: flex;
   justify-content: space-around;
