@@ -111,6 +111,11 @@ header{
     background-color: #d3d3d3;
 }
 
+.img--navbar{
+  max-height: 4rem;
+    width: auto;
+}
+
 .img__ticket{
   margin-right: 5px;
 }
@@ -698,6 +703,7 @@ footer{
 footer a{
   text-decoration: none;
     color: rgba(255, 255, 255, 0.671);
+    font-size: 14px;
 }
 /* fin footer */
 
