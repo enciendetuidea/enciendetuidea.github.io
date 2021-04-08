@@ -516,6 +516,7 @@ min-height: 70vh;
   font-family:var(--font-family-secunday);
   color: rgb(49 49 49);
   font-weight: 300;
+  text-align: initial;
 }
 
 .speaker__sc--container{
