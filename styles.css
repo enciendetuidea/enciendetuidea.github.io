@@ -203,7 +203,7 @@ header{
 
 
 .main-section--item__background{
-  background-image: url(./assets/foto.png);
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/wakkamole-61f7d.appspot.com/o/Eti-landing-assets%2Fportada%20sold%20out_Mesa%20de%20trabajo%201-low.png?alt=media&token=871077d8-09ba-4752-83e9-9ef935891c93");
   background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
