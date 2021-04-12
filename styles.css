@@ -9,6 +9,7 @@
 
 :root {
   --main-exa-color: #EC5B3D;
+  --sold-out-color: #f1ac9e;
   --title-font-size: 60px;
   --font-family-main: 'Marcellus', serif;
   --font-family-secunday:'Josefin Sans', sans-serif;
@@ -105,6 +106,7 @@ header{
     padding: 1rem 2rem;
     border-radius: 2rem;
     transition: background-color .5s ease;
+    opacity: 0.5;
 }
 
 #nav-cta:hover{
@@ -267,7 +269,7 @@ header{
 .item--cta{
   display: flex;
   justify-content: center;
-  background-color: var(--main-exa-color);
+  background-color: var(--sold-out-color);
   color: #313131;
   padding: 1.5rem 2rem;
   border-radius: 3rem;
@@ -642,6 +644,7 @@ min-height: 70vh;
   margin: 0px 10px 35px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  opacity: 0.5;
 }
 
 .tickets__container--item:hover{
